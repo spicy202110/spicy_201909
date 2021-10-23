@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20191226_5LmeCKlZg1I.info.json.vo.* \
+    20191226_5LmeCKlZg1I.info.json.ao.* \
+    20191226_5LmeCKlZg1I.info.json.bo.* \
+    20191226_5LmeCKlZg1I.info.json.wav 
+
+rm -fr               20191226_5LmeCKlZg1I.info_dir
+mkdir -p             20191226_5LmeCKlZg1I.info_dir
+mv 20191226_5LmeCKlZg1I.info.json 20191226_5LmeCKlZg1I.info.json.*         20191226_5LmeCKlZg1I.info_dir/
+
+
+
+mv  20191226_5LmeCKlZg1I.info_dir/20191226_5LmeCKlZg1I.info.json.jpg 20191226_5LmeCKlZg1I.info_dir/20191226_5LmeCKlZg1I.info.json.webm.mp4.jpg
+
+cat > 20191226_5LmeCKlZg1I.info_dir/_index.md << EOF3
++++
+title = " 20191226_5LmeCKlZg1I 01：香港废青VS墙内废物——香港快支撑不住了，我把我9月份做的视频放出来，作为油管首播吧，希望大家快快帮帮香港年青人。 "
+description = " #香港反送中#香港废青#中国红蛆_请快点发起暴动革命，这个直要反过来向中共的暴动武装。_香港需要正义的保护，这几天香港的事件比前几个月更悲惨，各大媒体没怎么报道。我只能把9月份做的这期节目重新再放出来，希望大家快快去帮助香港青年啊。_#新移民生活#美国移民#中美对比#台湾独立#中美贸易战#贸易协定#WTO世界贸易组织#人权监测技术#大技术控制#人脸识别#香港人民民主抗争#保卫香港#墙国人#厉害国#香港黑警暴力#电视认罪#李承鹏#五岳散人#国家安全机构#非政府组织#川普#特朗普#四川普通话#敖歌#中国黑社会#中国猪肉涨价#中美金融战#中美科技战#中美知识产权战#中国文字狱#亚细亚的孤儿#美国国会通过法案#美国制裁名单#民主与独裁#法治与人治# "
+weight = 20
++++
+
+{{< mymp4 mp4="20191226_5LmeCKlZg1I.info.json.webm.mp4" 
+text="len $(cat 20191226_5LmeCKlZg1I.info_dir/20191226_5LmeCKlZg1I.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20191226_5LmeCKlZg1I.info.json.25k.mp4"
+text="len $(cat 20191226_5LmeCKlZg1I.info_dir/20191226_5LmeCKlZg1I.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20191226_5LmeCKlZg1I.info.json.48k.mp4"
+text="len $(cat 20191226_5LmeCKlZg1I.info_dir/20191226_5LmeCKlZg1I.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="#香港反送中#香港废青#中国红蛆_请快点发起暴动革命，这个直要反过来向中共的暴动武装。_香港需要正义的保护，这几天香港的事件比前几个月更悲惨，各大媒体没怎么报道。我只能把9月份做的这期节目重新再放出来，希望大家快快去帮助香港青年啊。_#新移民生活#美国移民#中美对比#台湾独立#中美贸易战#贸易协定#WTO世界贸易组织#人权监测技术#大技术控制#人脸识别#香港人民民主抗争#保卫香港#墙国人#厉害国#香港黑警暴力#电视认罪#李承鹏#五岳散人#国家安全机构#非政府组织#川普#特朗普#四川普通话#敖歌#中国黑社会#中国猪肉涨价#中美金融战#中美科技战#中美知识产权战#中国文字狱#亚细亚的孤儿#美国国会通过法案#美国制裁名单#民主与独裁#法治与人治#" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=5LmeCKlZg1I" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

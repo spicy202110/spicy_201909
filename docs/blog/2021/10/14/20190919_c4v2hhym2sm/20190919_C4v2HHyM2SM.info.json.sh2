@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20190919_C4v2HHyM2SM.info.json.vo.* \
+    20190919_C4v2HHyM2SM.info.json.ao.* \
+    20190919_C4v2HHyM2SM.info.json.bo.* \
+    20190919_C4v2HHyM2SM.info.json.wav 
+
+rm -fr               20190919_C4v2HHyM2SM.info_dir
+mkdir -p             20190919_C4v2HHyM2SM.info_dir
+mv 20190919_C4v2HHyM2SM.info.json 20190919_C4v2HHyM2SM.info.json.*         20190919_C4v2HHyM2SM.info_dir/
+
+
+
+mv  20190919_C4v2HHyM2SM.info_dir/20190919_C4v2HHyM2SM.info.json.jpg 20190919_C4v2HHyM2SM.info_dir/20190919_C4v2HHyM2SM.info.json.webm.mp4.jpg
+
+cat > 20190919_C4v2HHyM2SM.info_dir/_index.md << EOF3
++++
+title = " 20190919_C4v2HHyM2SM 五毛早退出历史了，现在是机粉时代 "
+description = " 不要叫人小红粉，真人都老了，年轻的都是机粉。_到是海外爱国红蛆多，这些人不粉了。_爱国红蛆们比较自豪地骂香港年轻是“废青”，其实香港人可以直接骂红蛆是“废物”。60年代内地人就骂那一代港台是废青，三代港台名人都一直被扣这帽子。但没有一个真是废青。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20190919_C4v2HHyM2SM.info.json.webm.mp4" 
+text="len $(cat 20190919_C4v2HHyM2SM.info_dir/20190919_C4v2HHyM2SM.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20190919_C4v2HHyM2SM.info.json.25k.mp4"
+text="len $(cat 20190919_C4v2HHyM2SM.info_dir/20190919_C4v2HHyM2SM.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20190919_C4v2HHyM2SM.info.json.48k.mp4"
+text="len $(cat 20190919_C4v2HHyM2SM.info_dir/20190919_C4v2HHyM2SM.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="不要叫人小红粉，真人都老了，年轻的都是机粉。_到是海外爱国红蛆多，这些人不粉了。_爱国红蛆们比较自豪地骂香港年轻是“废青”，其实香港人可以直接骂红蛆是“废物”。60年代内地人就骂那一代港台是废青，三代港台名人都一直被扣这帽子。但没有一个真是废青。" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=C4v2HHyM2SM" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

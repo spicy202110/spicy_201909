@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20200221_DPoVX-rryHw.info.json.vo.* \
+    20200221_DPoVX-rryHw.info.json.ao.* \
+    20200221_DPoVX-rryHw.info.json.bo.* \
+    20200221_DPoVX-rryHw.info.json.wav 
+
+rm -fr               20200221_DPoVX-rryHw.info_dir
+mkdir -p             20200221_DPoVX-rryHw.info_dir
+mv 20200221_DPoVX-rryHw.info.json 20200221_DPoVX-rryHw.info.json.*         20200221_DPoVX-rryHw.info_dir/
+
+
+
+mv  20200221_DPoVX-rryHw.info_dir/20200221_DPoVX-rryHw.info.json.jpg 20200221_DPoVX-rryHw.info_dir/20200221_DPoVX-rryHw.info.json.webm.mp4.jpg
+
+cat > 20200221_DPoVX-rryHw.info_dir/_index.md << EOF3
++++
+title = " 20200221_DPoVX-rryHw 72：新牢狱之灾。瘟、疫、疾、札、瘥之区分 "
+description = " #牢狱之灾#犯人中招#女子监狱_我扯的是历史，不敢再扯当下发生的那几宗了，行吧。成汉王朝的牢狱之瘟灾，由李广发起，瘟疫造成了近五万人在不同环境中大量死亡，首先大面积病发的，就是从监狱里传出来。_不过，现在这种人工合成的玩意儿，不能再叫仙药了，而是叫新什么来着的科学发明。_-------_为5000年后的来者，我独立开通这个与各大主播力量同行的频道，人，不是低级动物，总需要给历史以真实，给后人以良知。《麻辣空间》将长期更新下去，我在中国的时候一直在做这个事，到了美国也就不是另起炉灶，而是接着中国那边关停的账号，继续换个国度再来。我的邮箱是wto5185188@几迈L，欢迎订阅我频道的朋友把不想公开在评论区的话发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Sctv麻辣空间。这两个地方平时用于看信息，我自己说的少。不过可以相互关注，方便联系。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20200221_DPoVX-rryHw.info.json.webm.mp4" 
+text="len $(cat 20200221_DPoVX-rryHw.info_dir/20200221_DPoVX-rryHw.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200221_DPoVX-rryHw.info.json.25k.mp4"
+text="len $(cat 20200221_DPoVX-rryHw.info_dir/20200221_DPoVX-rryHw.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20200221_DPoVX-rryHw.info.json.48k.mp4"
+text="len $(cat 20200221_DPoVX-rryHw.info_dir/20200221_DPoVX-rryHw.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="#牢狱之灾#犯人中招#女子监狱_我扯的是历史，不敢再扯当下发生的那几宗了，行吧。成汉王朝的牢狱之瘟灾，由李广发起，瘟疫造成了近五万人在不同环境中大量死亡，首先大面积病发的，就是从监狱里传出来。_不过，现在这种人工合成的玩意儿，不能再叫仙药了，而是叫新什么来着的科学发明。_-------_为5000年后的来者，我独立开通这个与各大主播力量同行的频道，人，不是低级动物，总需要给历史以真实，给后人以良知。《麻辣空间》将长期更新下去，我在中国的时候一直在做这个事，到了美国也就不是另起炉灶，而是接着中国那边关停的账号，继续换个国度再来。我的邮箱是wto5185188@几迈L，欢迎订阅我频道的朋友把不想公开在评论区的话发到我邮箱里，我会定期做答复的。另外，我的腿腿儿账号是：wto518，脸书ID叫：Sctv麻辣空间。这两个地方平时用于看信息，我自己说的少。不过可以相互关注，方便联系。" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=DPoVX-rryHw" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

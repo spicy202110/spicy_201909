@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20190919_4IzCDvEG0Rk.info.json.vo.* \
+    20190919_4IzCDvEG0Rk.info.json.ao.* \
+    20190919_4IzCDvEG0Rk.info.json.bo.* \
+    20190919_4IzCDvEG0Rk.info.json.wav 
+
+rm -fr               20190919_4IzCDvEG0Rk.info_dir
+mkdir -p             20190919_4IzCDvEG0Rk.info_dir
+mv 20190919_4IzCDvEG0Rk.info.json 20190919_4IzCDvEG0Rk.info.json.*         20190919_4IzCDvEG0Rk.info_dir/
+
+
+
+mv  20190919_4IzCDvEG0Rk.info_dir/20190919_4IzCDvEG0Rk.info.json.jpg 20190919_4IzCDvEG0Rk.info_dir/20190919_4IzCDvEG0Rk.info.json.webm.mp4.jpg
+
+cat > 20190919_4IzCDvEG0Rk.info_dir/_index.md << EOF3
++++
+title = " 20190919_4IzCDvEG0Rk 小粉红等于红蛆。请在美华人主播们不要使用“小红粉”或“小粉红”这样的标签，这个标签打击不了他们的这些蛆的蠕动臭气。直接给他们封扣“红蛆”、“红粉蛆”或“红黄蛆”标签最好。敖歌《麻辣空间》首播 "
+description = " 为5000年后的来者，我独立开通这个与各大主播力量同行的频道，人，不是低级动物，总需要给历史以真实，给后人以良知。《麻辣空间》将长期更新下去，我在中国的时候一直在做这个事，到了美国也就不是另起炉灶，而是接着中国那边关停的账号，继续换个国度再来。另外，如果有喜欢茶的朋友可点击这个链接https://www.youtube.com/channel/UCTR-dCG4g8rebOjkj4IcX2A，感谢关注，我真的希望大家帮我推广传播一下茶道SCTV，这个是在美国营生的专业，我在种茶，研究茶学，所以我需要在网上给我自己一个平台，用于展示我的工作进度，谢谢各位。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20190919_4IzCDvEG0Rk.info.json.webm.mp4" 
+text="len $(cat 20190919_4IzCDvEG0Rk.info_dir/20190919_4IzCDvEG0Rk.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20190919_4IzCDvEG0Rk.info.json.25k.mp4"
+text="len $(cat 20190919_4IzCDvEG0Rk.info_dir/20190919_4IzCDvEG0Rk.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20190919_4IzCDvEG0Rk.info.json.48k.mp4"
+text="len $(cat 20190919_4IzCDvEG0Rk.info_dir/20190919_4IzCDvEG0Rk.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="为5000年后的来者，我独立开通这个与各大主播力量同行的频道，人，不是低级动物，总需要给历史以真实，给后人以良知。《麻辣空间》将长期更新下去，我在中国的时候一直在做这个事，到了美国也就不是另起炉灶，而是接着中国那边关停的账号，继续换个国度再来。另外，如果有喜欢茶的朋友可点击这个链接https://www.youtube.com/channel/UCTR-dCG4g8rebOjkj4IcX2A，感谢关注，我真的希望大家帮我推广传播一下茶道SCTV，这个是在美国营生的专业，我在种茶，研究茶学，所以我需要在网上给我自己一个平台，用于展示我的工作进度，谢谢各位。" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=4IzCDvEG0Rk" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
