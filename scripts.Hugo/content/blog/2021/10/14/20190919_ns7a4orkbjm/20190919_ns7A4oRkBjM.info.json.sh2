@@ -1,0 +1,58 @@
+#!/bin/bash
+
+rm -f \
+    20190919_ns7A4oRkBjM.info.json.vo.* \
+    20190919_ns7A4oRkBjM.info.json.ao.* \
+    20190919_ns7A4oRkBjM.info.json.bo.* \
+    20190919_ns7A4oRkBjM.info.json.wav 
+
+rm -fr               20190919_ns7A4oRkBjM.info_dir
+mkdir -p             20190919_ns7A4oRkBjM.info_dir
+mv 20190919_ns7A4oRkBjM.info.json 20190919_ns7A4oRkBjM.info.json.*         20190919_ns7A4oRkBjM.info_dir/
+
+
+
+mv  20190919_ns7A4oRkBjM.info_dir/20190919_ns7A4oRkBjM.info.json.jpg 20190919_ns7A4oRkBjM.info_dir/20190919_ns7A4oRkBjM.info.json.mp4.jpg
+
+cat > 20190919_ns7A4oRkBjM.info_dir/_index.md << EOF3
++++
+title = " 20190919_ns7A4oRkBjM 禁言、戒严、宵禁的区别。香港会宵禁吗？ "
+description = " 为500年后的来者，我打算离开脸书，来油管独立开通这个与各大主播力量同行的频道，人，不是低级动物，总需要给历史以真实，给后人以良知。_香港事件不会三两个月能解决的，大家需要做好长期的武装准备，我估计至少需要2年左右吧，我与各路主播的看法不同，我认为2019年内是根本解决不了的。以我对中国政府的下三烂手段，用时间耗死耗尽对手。_所以，香港反送中，我不抱太大的希望在短期内能得到和平解决。我猜测，未来大规模会公开打人杀人，毫不收手。_因此，我希望我的学生中有人能站出来，研究武装战争，或许能引爆消灭中共的机会。 "
+weight = 20
++++
+
+{{< mymp4 mp4="20190919_ns7A4oRkBjM.info.json.mp4" 
+text="len $(cat 20190919_ns7A4oRkBjM.info_dir/20190919_ns7A4oRkBjM.info.json.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20190919_ns7A4oRkBjM.info.json.25k.mp4"
+text="len $(cat 20190919_ns7A4oRkBjM.info_dir/20190919_ns7A4oRkBjM.info.json.25k.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20190919_ns7A4oRkBjM.info.json.48k.mp4"
+text="len $(cat 20190919_ns7A4oRkBjM.info_dir/20190919_ns7A4oRkBjM.info.json.48k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="为500年后的来者，我打算离开脸书，来油管独立开通这个与各大主播力量同行的频道，人，不是低级动物，总需要给历史以真实，给后人以良知。_香港事件不会三两个月能解决的，大家需要做好长期的武装准备，我估计至少需要2年左右吧，我与各路主播的看法不同，我认为2019年内是根本解决不了的。以我对中国政府的下三烂手段，用时间耗死耗尽对手。_所以，香港反送中，我不抱太大的希望在短期内能得到和平解决。我猜测，未来大规模会公开打人杀人，毫不收手。_因此，我希望我的学生中有人能站出来，研究武装战争，或许能引爆消灭中共的机会。" >}}
+<br>
+
+{{< mydiv link="https://www.youtube.com/watch?v=ns7A4oRkBjM" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
